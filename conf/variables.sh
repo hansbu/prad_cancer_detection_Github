@@ -4,7 +4,7 @@
 DEFAULT_OBJ=20
 DEFAULT_MPP=0.5
 CANCER_TYPE=quip
-MONGODB_HOST=quip3.bmi.stonybrook.edu
+MONGODB_HOST=quip4.bmi.stonybrook.edu
 MONGODB_PORT=27017
 HEATMAP_VERSION=cancer-prad
 
