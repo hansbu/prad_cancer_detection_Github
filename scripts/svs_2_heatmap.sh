@@ -3,11 +3,6 @@
 cd ../
 source ./conf/variables.sh
 
-cd data/svs
-nohup bash cp_files.sh &
-cd ../..
-wait;
-
 cd patch_extraction_tumor_40X
 nohup bash start.sh &
 cd ..
