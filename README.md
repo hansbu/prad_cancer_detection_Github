@@ -2,20 +2,29 @@
 
 This software implements the pipeline for the Pancrease cancer detection project. 
 
-List of folders and functionalities are below: 
+# Dependencies
 
-scripts/: contains scripts that connect several sub-functionalities together for complete functionalities such as generating camicroscope heatmaps given svs images.
+ - [Pytorch 0.4.0](http://pytorch.org/)
+ - Torchvision 0.2.0
+ - cv2 (3.4.1)
+ - [Openslide 1.1.1](https://openslide.org/api/python/)
+ - [sklearn](https://scikit-learn.org/stable/)
+ - [PIL](https://pillow.readthedocs.io/en/3.1.x/reference/Image.html)
 
-conf/: contains configuration. 
+# List of folders and functionalities are below: 
 
-data/: a place where should contain all logs, input/output images, trained CNN models, and large files. 
+### scripts/: contains scripts that connect several sub-functionalities together for complete functionalities such as generating camicroscope heatmaps given svs images.
 
-download_heatmap/: downloads grayscale lymphocyte or tumor heatmaps
+### conf/: contains configuration. 
 
-heatmap_gen/: generate json files that represents heatmaps for camicroscope, using the lymphocyte and necrosis CNNs' raw output txt files. 
+### data/: a place where should contain all logs, input/output images, trained CNN models, and large files. 
 
-patch_extraction_tumor_40X/: extracts all patches from svs images. Mainly used in the test phase. 
+### download_heatmap/: downloads grayscale lymphocyte or tumor heatmaps
 
-prediction/: CNN prediction code. 
+### heatmap_gen/: generate json files that represents heatmaps for camicroscope, using the lymphocyte and necrosis CNNs' raw output txt files. 
 
-training/: CNN training code. 
+### patch_extraction_tumor_40X/: extracts all patches from svs images. Mainly used in the test phase. 
+
+### prediction/: CNN prediction code. 
+
+### training/: CNN training code. 
